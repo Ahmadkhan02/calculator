@@ -1,0 +1,43 @@
+:root{
+    --button_size:50px;
+    --button_border:1px;
+}
+
+.container{
+    max-width:calc(8*var(--button_border) + 4*var(--button_size));
+    margin:10vh auto 0 auto;
+    box-shadow:0px 0px 43px 17px rgba(153,153,153,1);
+}
+
+#display{
+    text-align:right;
+    height:var(--button_size);
+    line-height:70px;
+    padding:16px 16px;
+    font-size:25px;
+
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.button{
+    width:var(--button_size);
+    border:var(--button_border) solid #999;
+    height:49px;
+    text-align:center;
+    cursor:pointer;
+}
+
+#equal{
+    background-color:#5555FF;
+    color:#FFFFFF;
+}
+
+.button:hover{
+    background-color:#323330;
+    color:white;
+    transition:0.3s ease-in-out;
+}
